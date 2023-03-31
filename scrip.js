@@ -3,6 +3,7 @@ function calculerVMA() {
     var temps = parseFloat(document.getElementById("temps").value);
     var vitesse = distance / (temps / 60);
     var vma = vitesse * 1000 / 60;
+    var vma = vma / 10000 ;
     document.getElementById("vma").value = vma.toFixed(2) + " km/h";
   }
   
